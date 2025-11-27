@@ -23,6 +23,21 @@ class MyCard extends StatelessWidget {
                   style: TextStyle(fontSize: 16.0),
                 ),
               ),
+              Card(
+                color: Colors.amber,
+                child: Text(
+                  "Baris Kedua Card",
+                  style: TextStyle(fontSize: 16.0),
+                ),
+              ),
+              Card(
+                elevation: 8,
+                color: Colors.blue,
+                child: Text(
+                  "Yang ini Pake Shadow",
+                  style: TextStyle(fontSize: 16.0),
+                ),
+              ),
             ],
           ),
         ),
