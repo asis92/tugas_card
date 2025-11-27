@@ -7,60 +7,75 @@ class MyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Kartu Nama"), actions: const []),
-      body: SingleChildScrollView(
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12.0),
-            color: Colors.green,
-          ),
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            children: [
-              const Card(
-                color: Colors.amber,
-                child: Text(
-                  "Card Ini Akan Membuat Kita Pintar",
-                  style: TextStyle(fontSize: 16.0),
-                ),
-              ),
-              const Card(
-                color: Colors.amber,
-                child: Text(
-                  "Baris Kedua Card",
-                  style: TextStyle(fontSize: 16.0),
-                ),
-              ),
-              const Card(
-                elevation: 8,
-                color: Colors.blue,
-                child: Text(
-                  "Yang ini Pake Shadow",
-                  style: TextStyle(fontSize: 16.0),
-                ),
-              ),
-              Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15.0),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    "Shape Bingkai Persegi Panjang ini",
-                    style: TextStyle(fontSize: 12.0),
+      body: Center(
+        child: SingleChildScrollView(
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12.0),
+              color: Colors.green,
+            ),
+            padding: const EdgeInsets.all(20.0),
+            child: Center(
+              child: Column(
+                children: [
+                  const Card(
+                    color: Colors.amber,
+                    child: Text(
+                      "Card Ini Akan Membuat Kita Pintar",
+                      style: TextStyle(fontSize: 16.0),
+                    ),
                   ),
-                ),
-              ),
-              Card(
-                margin: EdgeInsets.all(16.0),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    "Bagian ini Menggunakan margin",
-                    style: TextStyle(fontSize: 10.0),
+                  const Card(
+                    color: Colors.amber,
+                    child: Text(
+                      "Baris Kedua Card",
+                      style: TextStyle(fontSize: 16.0),
+                    ),
                   ),
-                ),
+                  const Card(
+                    elevation: 8,
+                    color: Colors.blue,
+                    child: Text(
+                      "Yang ini Pake Shadow",
+                      style: TextStyle(fontSize: 16.0),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15.0),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Shape Bingkai Persegi Panjang ini",
+                        style: TextStyle(fontSize: 12.0),
+                      ),
+                    ),
+                  ),
+                  Card(
+                    margin: EdgeInsets.all(16.0),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Bagian ini Menggunakan margin",
+                        style: TextStyle(fontSize: 10.0),
+                      ),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                      side: BorderSide(color: Colors.black, width: 2),
+                    ),
+                    borderOnForeground: true,
+                    child: Text(
+                      "Border Tidak Akan Menimpah Konten",
+                      style: TextStyle(fontSize: 10.0),
+                    ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
       ),
