@@ -6,7 +6,11 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Kartu Nama"), actions: const []),
+      appBar: AppBar(
+        title: const Text("Kartu Nama"),
+        actions: const [],
+        centerTitle: true,
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Container(
@@ -91,6 +95,26 @@ class MyCard extends StatelessWidget {
                     child: Text(
                       "Anti Alias Clip Card",
                       style: TextStyle(fontSize: 14.0),
+                    ),
+                  ),
+                  Card(
+                    semanticContainer: true,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Text Ini Menggunakan Semantic True",
+                        style: TextStyle(fontSize: 14.0),
+                      ),
+                    ),
+                  ),
+                  Card(
+                    semanticContainer: false,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Text Ini Menggunakan Semantic False",
+                        style: TextStyle(fontSize: 14.0),
+                      ),
                     ),
                   ),
                 ],
