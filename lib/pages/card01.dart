@@ -14,28 +14,50 @@ class MyCard extends StatelessWidget {
             color: Colors.green,
           ),
           padding: const EdgeInsets.all(20.0),
-          child: const Column(
+          child: Column(
             children: [
-              Card(
+              const Card(
                 color: Colors.amber,
                 child: Text(
                   "Card Ini Akan Membuat Kita Pintar",
                   style: TextStyle(fontSize: 16.0),
                 ),
               ),
-              Card(
+              const Card(
                 color: Colors.amber,
                 child: Text(
                   "Baris Kedua Card",
                   style: TextStyle(fontSize: 16.0),
                 ),
               ),
-              Card(
+              const Card(
                 elevation: 8,
                 color: Colors.blue,
                 child: Text(
                   "Yang ini Pake Shadow",
                   style: TextStyle(fontSize: 16.0),
+                ),
+              ),
+              Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Shape Bingkai Persegi Panjang ini",
+                    style: TextStyle(fontSize: 12.0),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.all(16.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Bagian ini Menggunakan margin",
+                    style: TextStyle(fontSize: 10.0),
+                  ),
                 ),
               ),
             ],
