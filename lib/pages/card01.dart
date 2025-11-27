@@ -73,6 +73,26 @@ class MyCard extends StatelessWidget {
                       style: TextStyle(fontSize: 10.0),
                     ),
                   ),
+                  Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                      side: BorderSide(color: Colors.black, width: 2),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(8),
+                      child: Text(
+                        "Border Tidak Akan Menimpah Konten",
+                        style: TextStyle(fontSize: 10.0),
+                      ),
+                    ),
+                  ),
+                  Card(
+                    clipBehavior: Clip.antiAlias,
+                    child: Text(
+                      "Anti Alias Clip Card",
+                      style: TextStyle(fontSize: 14.0),
+                    ),
+                  ),
                 ],
               ),
             ),
