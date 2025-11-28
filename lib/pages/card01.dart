@@ -117,6 +117,16 @@ class MyCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Card(
+                    shadowColor: Colors.red,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Ini Shadow Color Cards",
+                        style: TextStyle(fontSize: 14.0),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
