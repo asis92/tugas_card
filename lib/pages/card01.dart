@@ -127,6 +127,18 @@ class MyCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Ini Text Costum Border Radius",
+                        style: TextStyle(fontSize: 14.0),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
