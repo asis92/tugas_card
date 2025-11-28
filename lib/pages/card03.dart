@@ -24,7 +24,22 @@ class MyCard3 extends StatelessWidget {
                       colors: [Colors.blue, Colors.red],
                     ),
                   ),
-                  child: Text("text", style: TextStyle(fontSize: 20.0)),
+                  child: Row(
+                    children: [
+                      //Container dengan circle Avatar image
+                      Container(
+                        decoration: BoxDecoration(shape: BoxShape.circle),
+                        child: CircleAvatar(
+                          radius: 60,
+                          backgroundImage: AssetImage("assets/images/Logo.png"),
+                        ),
+                      ),
+                      // Text Name
+                      // Container dengan Box Decoration
+                      // Dengan text "Flutter Developer"
+                      // Row dengan 3 Row
+                    ],
+                  ),
                 ),
               ),
             ],
