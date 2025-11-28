@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_card/pages/card01.dart';
+import 'package:flutter_card/pages/card02.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
       ),
       debugShowCheckedModeBanner: false,
-      home: MyCard(),
+      home: MyCard2(),
     );
   }
 }
