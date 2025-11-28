@@ -10,20 +10,31 @@ class MyCard2 extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(20.0),
-          child: const Column(
+          child: Column(
             children: [
               Card(
                 elevation: 8,
-                color: Colors.lightBlue,
+                color: Colors.grey,
                 child: Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Tentang Saya", style: TextStyle(fontSize: 15.0)),
-                      SizedBox(height: 10),
+                      const Text(
+                        "Tentang Saya",
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
                       Text(
                         "Keterangan",
-                        style: TextStyle(fontSize: 10.0),
+                        style: TextStyle(
+                          fontSize: 10.0,
+                          color: Colors.grey[700],
+                          height: 1.5,
+                        ),
                         textAlign: TextAlign.justify,
                       ),
                     ],
