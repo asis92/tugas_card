@@ -24,21 +24,37 @@ class MyCard3 extends StatelessWidget {
                       colors: [Colors.blue, Colors.red],
                     ),
                   ),
-                  child: Row(
-                    children: [
-                      //Container dengan circle Avatar image
-                      Container(
-                        decoration: BoxDecoration(shape: BoxShape.circle),
-                        child: CircleAvatar(
-                          radius: 60,
-                          backgroundImage: AssetImage("assets/images/Logo.png"),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        //Container dengan circle Avatar image
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white, width: 4),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.2),
+                                blurRadius: 10,
+                                offset: Offset(0, 5),
+                              ),
+                            ],
+                          ),
+                          child: CircleAvatar(
+                            radius: 60,
+                            backgroundImage: AssetImage(
+                              "assets/images/Logo.png",
+                            ),
+                          ),
                         ),
-                      ),
-                      // Text Name
-                      // Container dengan Box Decoration
-                      // Dengan text "Flutter Developer"
-                      // Row dengan 3 Row
-                    ],
+                        // Text Name
+                        // Container dengan Box Decoration
+                        // Dengan text "Flutter Developer"
+                        // Row dengan 3 Row
+                      ],
+                    ),
                   ),
                 ),
               ),
